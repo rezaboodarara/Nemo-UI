@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import playBtn from "../assets/play-button.png";
 
 function Cell({ num }: { num: number }) {
@@ -20,9 +20,11 @@ function Cell({ num }: { num: number }) {
         <textarea
           name="input resize-none"
           id={`${cellNum}`}
+          disabled={isDisabled}
           className="border border-slate-900 w-1/2"
         ></textarea>
         <button
+          type="submit"
           disabled={isDisabled}
           onClick={inputSub}
           className="ml-2 self-start"
