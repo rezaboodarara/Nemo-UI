@@ -1,0 +1,36 @@
+{
+  "name": "nemo-wasm",
+  "type": "module",
+  "collaborators": [
+    "Alex Ivliev <alex.ivliev@tu-dresden.de>",
+    "Aidan Bailey <dev@aidanbailey.me>",
+    "Jakob Steinberg <jakob_maximilian.steinberg@mailbox.tu-dresden.de>",
+    "Lukas Gerlach <lukas.gerlach@tu-dresden.de>",
+    "Larry González <larry.gonzalez@tu-dresden.de>",
+    "Markus Krötzsch <markus.kroetzsch@tu-dresden.de>",
+    "Matthias Meissner <matthias.meissner2@mailbox.tu-dresden.de>",
+    "Maximilian Marx <maximilian.marx@tu-dresden.de>",
+    "Simon Meusel <simon.meusel@mailbox.tu-dresden.de>",
+    "Stefan Ellmauthaler <stefan.ellmauthaler@tu-dresden.de>"
+  ],
+  "description": "WebAssembly bindings for nemo, a fast in-memory rule engine",
+  "version": "0.7.1-dev",
+  "license": "APACHE-2.0 OR MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knowsys/nemo"
+  },
+  "files": [
+    "nemo_wasm_bg.wasm",
+    "nemo_wasm.js",
+    "nemo_wasm_bg.js",
+    "nemo_wasm.d.ts"
+  ],
+  "main": "nemo_wasm.js",
+  "homepage": "https://github.com/knowsys/nemo",
+  "types": "nemo_wasm.d.ts",
+  "sideEffects": [
+    "./nemo_wasm.js",
+    "./snippets/*"
+  ]
+}
